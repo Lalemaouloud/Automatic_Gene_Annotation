@@ -1,0 +1,148 @@
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+  <title>Results - Gene Automatic Annotation Table</title>
+  <!-- DataTables CSS libraries -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/fixedcolumns/3.3.0/css/fixedColumns.dataTables.min.css">
+  
+  <!-- jQuery and DataTables JavaScript libraries -->
+  <script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+  <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/fixedcolumns/3.3.0/js/dataTables.fixedColumns.min.js"></script>
+  
+  <!-- DataTables initialization script -->
+  <script type="text/javascript" class="init">
+    $(document).ready( function () {
+        $('#table_id').DataTable( {
+            "scrollY": 700,
+            "scrollX": true,
+            "lengthMenu": [ 6, 10, 15, 20, "All" ],
+            fixedColumns:   {
+                leftColumns: 1
+            }
+        });
+    });
+  </script>
+
+  <!-- CSS style -->
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      font-size: 16px;
+      color: #333;
+    }
+
+    .header {
+      background-color: #33893d;
+      color: #ffffff;
+      padding: 20px 0;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    img {
+      height: 170px;
+      display: block;
+      margin: 0 auto;
+    }
+
+    h1 {
+      font-size: 24px;
+    }
+
+    .dataTables_wrapper {
+      width: 98%;
+      margin: 0 auto;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    table.dataTable thead th, table.dataTable thead td {
+      background-color: #33893d;
+      color: #ffffff;
+      padding: 10px;
+      border-bottom: none;
+      border: 1px solid;
+    }
+
+    table.dataTable tbody td {
+      background-color: #ffffff;
+      color: #333;
+      border-top: 1px solid #eaeaea;
+    }
+
+    .dataTables_wrapper .dataTables_paginate .paginate_button {
+      color: #33893d;
+      background-color: #ffffff;
+      border: 1px solid #aaa;
+    }
+
+    .dataTables_wrapper .dataTables_paginate .paginate_button.current, 
+    .dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+      color: #ffffff !important;
+      background-color: #33893d !important;
+      border-color: #33893d !important;
+    }
+
+    .scroll {
+      overflow: auto;
+      max-height: 200px;
+    }
+
+    .dataTables_scroll {
+      background-color: #ffffff;
+      border: 1px solid #dddddd;
+    }
+
+    .dataTables_length, .dataTables_filter, .dataTables_info, .dataTables_paginate {
+      color: #333;
+    }
+  </style>
+</head>
+
+
+<body>
+<div class="header">
+<img src="img/DNA.png">
+<h1>Results : Gene Automatic Annotation Table</h1>
+<br><p>/!\ : For bacteria, only the first stem has been selected for ensembl.</p>
+</div>
+<table id="table_id" class="display nowrap cell-border" style="width:100%">
+<thead>
+<tr>
+  <th>Initial DATA</th>
+  <th colspan="4">NCBI data</th>
+  <th colspan="4">Ensembl data</th>
+  <th colspan="2">Uniprot data</th>
+  <th>String</th>
+  <th>PDB</th>
+  <th>Pfam</th>
+  <th>Prosite</th>
+  <th colspan="2">KEGG</th>
+  <th colspan="3">GO</th>
+</tr>
+<tr>
+  <th>Gene and Organism</th>
+  <th>The Official gene name</th>
+  <th>The Gene ID</th>
+  <th>The RefSeq RNA ID</th>
+  <th>The RefSeq Prot ID</th>
+  <th>The Gene ID</th>
+  <th>The Transcript ID</th>
+  <th>The Protein ID</th>
+  <th>The Orthologs list</th>
+  <th>The Uniprot ID</th>
+  <th>The Official Protein Name</th>
+  <th>The Network</th>
+  <th>The Structure</th>
+  <th>The Domains</th>
+  <th>The Motifs</th>
+  <th>The ID</th>
+  <th>Pathway</th>
+  <th>Molecular function</th>
+  <th>Cellular component</th>
+  <th>Biological process</th>
+</tr>
+</thead>
+<tbody>
